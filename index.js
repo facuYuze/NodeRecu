@@ -1,4 +1,3 @@
-// index.js
 import express from 'express';
 import cors from 'cors';
 import preguntasRouter from './src/routers/preguntasRouter.js'; 

@@ -1,5 +1,4 @@
-// src/controllers/preguntasController.js
-import PreguntasService from '../services/preguntasService.js';  // Verifica la ruta de importación
+import PreguntasService from '../services/preguntasService.js'; 
 
 class PreguntasController {
     static async crearPregunta(req, res) {

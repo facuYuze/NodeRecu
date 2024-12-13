@@ -1,4 +1,3 @@
-// src/services/respuestasService.js
 import { respuestas, preguntas } from '../db/memoryDatabase.js';
 
 class RespuestasService {

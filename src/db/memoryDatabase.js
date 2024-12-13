@@ -1,4 +1,3 @@
-// src/db/memoryDatabase.js
 
 const preguntas = [
     {

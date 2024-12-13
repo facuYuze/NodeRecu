@@ -1,4 +1,3 @@
-// src/routers/respuestasRouter.js
 import { Router } from 'express';
 import RespuestasController from '../controllers/respuestasController.js';
 

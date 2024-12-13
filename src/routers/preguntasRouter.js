@@ -1,4 +1,3 @@
-// src/routers/preguntasRouter.js
 import { Router } from 'express';
 import PreguntasController from '../controllers/preguntasController.js';
 

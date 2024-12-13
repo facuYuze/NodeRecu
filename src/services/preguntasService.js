@@ -1,4 +1,3 @@
-// src/services/preguntasService.js
 import { preguntas } from '../db/memoryDatabase.js';
 
 class PreguntasService {
@@ -40,25 +39,24 @@ class PreguntasService {
     static obtenerTodasPreguntas(filtro = '', orden = 'fecha_creacion') {
         let resultados = preguntas;
 
-        // Filtrado por palabra clave en la pregunta
+
         if (filtro) {
             resultados = resultados.filter((p) =>
-                p.pregunta.toLowerCase().includes(filtro.toLowerCase()) // Comparar de manera insensible a mayúsculas/minúsculas
+                p.pregunta.toLowerCase().includes(filtro.toLowerCase())
             );
         }
 
-        // Ordenamiento por fecha de creación (ascendente o descendente)
         if (orden === 'asc') {
             resultados = resultados.sort(
-                (a, b) => new Date(a.fecha_creacion) - new Date(b.fecha_creacion) // Ordenar de forma ascendente por fecha
+                (a, b) => new Date(a.fecha_creacion) - new Date(b.fecha_creacion) 
             );
         } else if (orden === 'desc') {
             resultados = resultados.sort(
-                (a, b) => new Date(b.fecha_creacion) - new Date(a.fecha_creacion) // Ordenar de forma descendente por fecha
+                (a, b) => new Date(b.fecha_creacion) - new Date(a.fecha_creacion)
             );
         }
 
-        return resultados;  // Devuelve las preguntas filtradas y ordenadas
+        return resultados; 
     }
 
     static obtenerPreguntaPorId(id) {

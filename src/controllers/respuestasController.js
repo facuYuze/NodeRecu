@@ -1,4 +1,3 @@
-// src/controllers/respuestasController.js
 import RespuestasService from '../services/respuestasService.js';
 
 class RespuestasController {
